@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="title">
+		<img src="southern.png">
+		<h1>Online Registration</h1>
+	</div>
+
+	<div class="instruction">
+		<div>Instruction:
+			<ol>
+				<li>This form contains three (3) parts, please fill out this form before submission.</li>
+				<li>The required fields are marked in red asterisk (<span class="redMark">*</span>).</li>
+				<li>Kindly please check and make sure contact informations are correct, our staff will use these information to get in touch with you.</li>
+				<li>No amendment is allowed after you submit your application.</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="first">
+		<div class="box">
+		<h3 class="head">Intake & Choices</h3><br>
+
+		<div class="strong">Intake and programme<span class="redMark">*</span>
+		<div>Please select intake year and intake.</div>
+		
+
+		<form name="registration" action="#" method="post" onsubmit="return formValidation();">
+			<label for="intake">Year/Intake:</label><br>
+			<input type="radio" >2020/May
+			<input type="radio" >2020/September
+		</div>
+
+			<div class="strong">Choice of Programme
+			<div>Please select two</div>
+				<label for="programme">1st Choice:</label><br>
+				<select name="programme" >
+					<option value="-1"></option>
+					<option value="2">Intformation Technogy</option>
+					<option>Business</option>
+					<option>Accounting</option>
+					<option>Arts and Design</option>
+					<option>Engineering</option>
+				</select><br>
+	
+			<label for="programme">2nd Choice:</label><br>
+				<select name="programme">
+					<option  value="0"></option>
+					<option>Intformation Technogy</option>
+					<option>Business</option>
+					<option>Accounting</option>
+					<option>Arts and Design</option>
+					<option>Engineering</option>
+				</select>
+			</div>
+
+			<div class="strong">Hostel<br>
+				<input type="radio" name="hostel"><label for="hostel" >Yes</label>
+				<input type="radio" name="hostel"><label for="hostel">No</label>
+		 	</div>
+
+			<div class="strong">Scholarship<br>
+				<input type="radio" name="scholarship"><label for="scholarship">Yes</label>
+				<input type="radio" name="scholarship"><label for="scholarship">No</label>
+				<div>If Yes, please select type of scholarship</div>
+				<select name="scholarship">
+					<option></option>
+					<option>Excellent Student Full Scholarship</option>
+					<option>New Student Scholarship</option>
+					<option>Multi CulturalScholarship</option>
+				</select>
+			</div>
+		
+		</div>
+	</div>
+
+	<div class="second">
+		<div class="box">
+		<h3 class="head">Personal Information</h3><br>
+			
+			<div class="strong"><label for="name">Name</label><span class="redMark">*</span><br>
+			<input type="text" name="name" placeholder="Name" required>
+			</div>
+			<div id="nameError"></div>
+
+			<div class="strong">Gender<br>
+			<input type="radio" name="gender"><label for="female">Female</label>
+			<input type="radio" name="gender"><label for="male">Male</label>
+			</div>
+
+			<div class="strong"><label for="birthday">Date of Birth</label> <br>
+				<input type="text" name="birthday" placeholder="00/00/0000">
+			</div>
+
+			<div class="strong">Nationality<span class="redMark">*</span><br>
+				<select required>
+					<option> </option>
+					<option>Malaysia</option>
+					<option>Singapore</option>
+					<option>Vietnam</option>
+					<option>Thailand</option>
+				</select>
+			</div>
+
+			<div class="strong" ><label for="NRIC">NRIC no.</label><span class="redMark">*</span><br>
+				<input type="NRIC" name="NRIC" placeholder="000000-00-0000" required="">
+			</div>
+
+			<div class="strong">Race<br>
+				<input type="radio" name="race"><label for="race">Chinese</label>
+				<input type="radio" name="race"><label for="race">Malay</label>
+				<input type="radio" name="race"><label for="race">Indian</label>
+			</div>
+
+			<div class="strong">Mobile Phone<span class="redMark">*</span><br>
+				<input type="text" name="mobile" placeholder="xxx-xxxxxxx" required>
+			</div>
+
+			<div class="strong">E-mail<br>
+				<input type="text" name="email" placeholder="E-mail">
+			</div>
+
+			<div class="strong">Address<span class="redMark">*</span><br>
+				<input type="text" name="address" placeholder="Address" required>
+			</div>
+
+			<div class="strong">Area<span class="redMark">*</span><br>
+				<input type="text" name="area" placeholder="Area" required>
+			</div>
+
+			<div class="strong">Postcode<span class="redMark">*</span><br>
+				<input type="text" name="postcode" placeholder="Postcode" required>
+			</div>
+
+			<div class="strong">State<span class="redMark">*</span><br>
+				<input type="text" name="state" placeholder="State" required>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="third">
+		<div class="box">
+		<h3 class="head">Certificate & Grades</h3><br>
+
+		<div class="strong">Certificate<span class="redMark">*</span><br>
+		<select required>
+			<option>SPM</option>
+			<option>A-level</option>
+			<option>STPM</option>
+			<option>O-level</option>
+		</select>
+		<table>
+			<th>Subject</th>
+			<th>Grade</th>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select>
+						<option>Chinese</option>
+						<option>Math</option>
+						<option>English</option>
+						<option>Addtional Math</option>
+						<option>Sejarah</option>
+					</select>
+				</td>
+				<td>
+					<select>
+						<option></option>
+						<option>A</option>
+						<option>B</option>
+						<option>C</option>
+						<option>D</option>
+						<option>E</option>	
+					</select>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	
+
+	<input  style="margin-bottom: 15px; margin-top: 15px;" type="submit" name="submit" value="Submit" class="submit" onclick="formValidation()">
+
+	</div>
+
+	</form>
+	<script src="form.js"></script>
+</body>
+</html>
