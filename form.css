@@ -1,0 +1,71 @@
+body{
+	margin:0;
+}
+
+img{
+	width: 100px;
+	height: 150px;
+}
+
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1{
+	margin-left: 30px;
+}
+
+.instruction div{
+	padding-top: 5px;
+	padding-left: 20px;
+	border:3px solid red;
+	width:80%;
+	background-color: lavenderblush;
+}
+
+.instruction ol{
+	margin-top: 0px;
+}
+
+.redMark{
+	color: red;
+}
+
+.first, .instruction, .second, .third, .submit{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.first{
+	margin-top: 20px;
+}
+
+.box{
+	width: 70%;
+	background-color: lightgray;
+	padding-left: 5%;
+	padding-bottom: 20px;
+	margin-top: 15px;
+}
+
+.head{
+	background-color: darkgray;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	font-size: 28px;
+	display: inline-block;
+}
+
+.strong{
+	padding-bottom: 15px;
+}
+
+.end{
+	padding-bottom: 10px;
+}
+
